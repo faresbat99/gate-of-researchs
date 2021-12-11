@@ -4,13 +4,14 @@ import { Home } from './Home';
 import { About } from './About';
 import { contact } from './contact';
 import { pageNotFound } from './PageNotFound';
-
+import Navbar from './components/Navbar';
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <Router>
           <Switch>
+        <Navbar />
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={contact} />
             <Route path="/about" component={About} />
