@@ -17,11 +17,20 @@
     height: 80px;
     max-width: 1500px;
   }
+/*   
+  @media (max-width:360px) {
+      .navbar-logo link{
+        font-size:14px;
+      }
+  }  */
+    
+    
   
   .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 24px;
+  
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
