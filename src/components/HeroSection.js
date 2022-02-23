@@ -16,7 +16,7 @@ function HeroSection() {
     
           <Col xs={6}>
             
-            <Form className="d-flex">
+            <Form className="d-md-flex">
               <FormControl
                 type="search"
                 placeholder="Search"

@@ -57,11 +57,19 @@ video {
   
   @media screen and (max-width: 768px) {
     .hero-container > h6 {
-      font-size: 50px;
+      font-size: 40px;
       text-align: center;
       margin-top: -100px;
+      margin: 10px;
     }
-  
+    @media screen and (max-width: 768px) {
+      .d-md-flex{
+        
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 2px;
+      }
+    }
     .hero-container > p {
       font-size: 30px;
     }
