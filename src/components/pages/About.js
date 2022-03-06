@@ -43,7 +43,7 @@ export default function about() {
                 </ul>
               </p>
             </div>
-            <div>
+            <div className="goals">
               <h1>Our goals</h1>
               <p>
                 Our message Choose a variety of sources of knowledge in applied

@@ -28,6 +28,7 @@ function Footer() {
               type="password"
               placeholder="Your Password"
             />
+
             <Button buttonStyle="btn--outline">login </Button>
           </form>
         </div>
@@ -37,19 +38,19 @@ function Footer() {
           <div class="footer-link-items">
             <h2>About Us</h2>
             <Link to="/about">How it works</Link>
-            <Link to="/">Teams</Link>
-            <Link to="/">Terms of Service</Link>  
+            <Link to="/about">Teams</Link>
+            <Link to="/about">Terms of Service</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
+            <Link to="/about">Contact</Link>
+            <Link to="/about">Support</Link>
+            <Link to="/about">Destinations</Link>
           </div>
         </div>
       </div>
       <small class="website-rights">
-        All copyrights reserved by Dammitta university © 2020
+        All copyrights reserved by Dammitta university © 2022
       </small>
     </div>
   );

@@ -30,7 +30,6 @@
   color: rgb(255, 255, 255);
   font-size: 25px;
   padding: 4rem;
-  
 }
 
 .about-heading {
@@ -76,39 +75,41 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.About-Us >div>h1{
+.About-Us > div > h1 {
   padding: 10px;
   text-align: center;
   margin: 10px;
 }
+.goals {
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
 
-  @media screen and (max-width: 960px) {
-    .About-Us >div{
-      position: relative;
-      height: 170vh;
-      font-size: small;
-      padding: 5px;
-    }
+@media screen and (max-width: 960px) {
+  .About-Us > div {
+    position: relative;
+    height: 170vh;
+    font-size: small;
+    padding: 5px;
   }
-  @media screen and (max-width: 960px) {
-    .about-gate-research{
-      position: relative;
-      height: 170vh;
-      font-size: small;
-      margin-top: 100px;
-    }
+}
+@media screen and (max-width: 960px) {
+  .about-gate-research {
+    position: relative;
+    height: 170vh;
+    font-size: small;
+    margin-top: 100px;
   }
-  @media screen and (max-width: 960px) {
-    .about-text >p{
-      position: relative;
-      font-size: small;
-      margin: auto;
-      padding: 15px;
-      
-    }
+}
+@media screen and (max-width: 960px) {
+  .about-text > p {
+    position: relative;
+    font-size: small;
+    margin: auto;
+    padding: 15px;
   }
-
-
+}
 
 .about-text > p {
   padding: auto;
@@ -132,4 +133,144 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+/* .Login-Register {
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top:10em;
+  padding-left:25em;
+  padding-right:10em;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  flex: auto;
+  flex-direction: column; */
+/* }
+@media screen and (max-width: 960px) {
+  .Login-Register{
+    position: relative;
+    font-size: small;
+    margin: auto;
+    padding: 15px;
+    padding-top: 20vh; */
+/* }
+} */
+/* .login-logo{
+  color: #fff;
+  justify-self: start;
+  margin-left: 4em;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+} */
+.box {
+  margin-top: 20px;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  /* make it in the midddle */
+}
+.box-input {
+  background: none;
+  display: block;
+  border: 0;
+  margin: 13px auto;
+  text-align: center;
+  padding: 12px 10px;
+  border: 3px solid #fff;
+  outline: none;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.25px;
+  width: 220px;
+}
+.box-input:hover {
+  width: 240px;
+  border-color: #0367fd;
+}
+form > .buttonlogin-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonlogin {
+  background: none;
+  border: 0;
+  display: block;
+  margin: 15px 10px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  padding: 14px 2px;
+  width: 100px;
+  border-radius: 25px;
+  outline: none;
+  /* the words dont get outside */
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2px;
+  font-weight: bold;
+ 
+  
+}
+ .buttonlogin:hover{
+  background-color: #0367fd;
+  transition: all 0.2s ease-out;
+}
+
+form > h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.forgot-password {
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff ;
+  font-size: medium;
+  
+}
+.forgot-password>a{
+ color: #fff;
+ cursor: pointer;
+ font-size: medium;
+ font-weight: bold;
+ 
+}
+.forgot-password>a:hover{
+  /* text-decoration: underline; */
+  transition: all 0.2s ease-out;
+  padding: 4px;
+  border-radius: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#loginName{
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#loginName:hover{
+  border-top: 4px solid #fff;
+  transition: all 0.9s ease-out;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  background-image: url("./login_background.jpg");
 }

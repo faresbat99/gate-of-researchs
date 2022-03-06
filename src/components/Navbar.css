@@ -17,12 +17,13 @@
     height: 80px;
     max-width: 1500px;
   }
-/*   
-  @media (max-width:360px) {
-      .navbar-logo link{
-        font-size:14px;
+  
+  @media (max-width:400px) {
+    .fa-researchgate {
+        font-size:25px;
+        margin-top: 10px;
       }
-  }  */
+  } 
     
     
   
@@ -33,7 +34,7 @@
   
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
   }
@@ -69,7 +70,7 @@
   
   .nav-links:hover {
     border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
   }
   
   .fa-bars {
@@ -127,6 +128,7 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+      
     }
   
     .menu-icon {

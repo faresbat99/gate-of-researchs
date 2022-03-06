@@ -3,8 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import  axios  from "axios";
 
-
+axios.defaults.baseURL='http://localhost:8000/api/';//every r equest we make will attached it in the front 
+//we passed the cookie from the backend and we have to store it also axios, otherwise it will not work.
+axios.defaults.withCredentials=true;
 ReactDOM.render(
   <React.StrictMode>
     <App />
