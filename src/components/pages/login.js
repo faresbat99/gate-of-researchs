@@ -3,7 +3,8 @@ import "./../../App.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
-const Login = ({setBelogin}) => {
+
+const Login = ({ setBelogin }) => {
   const [email, setemail] = useState();
   const [password, setpassword] = useState();
   const [redirect, setRedirect] = useState(false);
@@ -44,9 +45,9 @@ const Login = ({setBelogin}) => {
         onChange={(e) => setpassword(e.target.value)}
       />
       <p className="forgot-password">
-        <a style={{ textDecoration: "none" }} href="#">
+        <Link style={{ textDecoration: "none" }} to="./forgot">
           Forget your password?
-        </a>
+        </Link>
       </p>
       <div className="buttonlogin-class">
         <input type="submit" className="buttonlogin" value={"Login"} />

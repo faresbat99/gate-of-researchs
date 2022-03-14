@@ -3,13 +3,15 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import about from "./components/pages/About";
 import register from "./components/pages/Register";
 import { useEffect } from "react";
 import axios from "axios";
 import Login from "./components/pages/login";
+import forgot from './components/pages/forgot';
+import Reset from "./components/pages/Reset";
+import AddResearch from "./components/pages/addResearch";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,14 +40,16 @@ function App() {
         <Navbar user={user} setBelogin={() => setBelogin(false)} />
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/services" component={Services} />
+          <Route path="/reset/:token" component={Reset} />
           <Route
             path="/login"
             component={() => <Login setBelogin={() => setBelogin(true)} />}
           />
           <Route path="/products" component={Products} />
+          <Route path="/forgot" component={forgot} />
           <Route path="/about" component={about} />
           <Route path="/register" component={register} />
+          <Route path="/addResearch" component={AddResearch} />
         </Switch>
       </Router>
     </>

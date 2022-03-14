@@ -76,6 +76,21 @@ function Navbar({ user, setBelogin }) {
   } else {
     links = button && <Button buttonStyle="btn--outline">SIGN UP</Button>;
   }
+  let linkss;
+  if (user) {
+    linkss = (
+      <Link className="nav-links-mobile" onClick={(closeMobileMenu, logout)}>
+        Logout
+      </Link>
+    );
+  } else {
+    linkss = (
+      <Link to="/login" className="nav-links-mobile" onClick={closeMobileMenu}>
+        SIGN UP
+      </Link>
+    );
+  }
+  /////
   return (
     <>
       <nav className="navbar">
@@ -102,21 +117,23 @@ function Navbar({ user, setBelogin }) {
               </Link>
             </li>
             <li className="nav-item">
+              <Link
+                to="/addResearch"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Add your Research
+              </Link>
+            </li>
+
+            <li className="nav-item">
               <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                 About Us
               </Link>
             </li>
-            
+
             {name}
-            <li>
-              <Link
-                to="/login"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
+            <li>{linkss}</li>
           </ul>
           {links}
           {/* {button && <Button buttonStyle="btn--outline">SIGN UP</Button>} */}

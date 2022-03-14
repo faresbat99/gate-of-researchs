@@ -40,7 +40,7 @@
   /* Stryling the text and giving it gradiant */
   color: #ffffff;
   background: -webkit-linear-gradient(hsl(0, 0%, 100%), #98c1d9);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 
@@ -237,6 +237,16 @@ form > h1 {
   font-weight: bold;
   letter-spacing: 2px;
 }
+form > h2 {
+  color: rgb(255, 255, 255,0.9);
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+
+  
+}
+
 .forgot-password {
   font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #fff ;
@@ -274,3 +284,16 @@ form > h1 {
 body {
   background-image: url("./login_background.jpg");
 }
+/* .outsideBox{
+    background: url('./login_background.jpg') center center/cover no-repeat; 
+
+} */
+.alertDanger{
+ background-color: #fff;
+}
+.button-btn{
+text-align: center;
+padding: 20px;
+
+}
+

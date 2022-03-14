@@ -14,7 +14,7 @@ function Footer() {
           Research Gate is a non-profit organization that aims to spread
           knowledge and culture, and instill a love of reading among students
         </p>
-        <div className="input-areas">
+        {/* <div className="input-areas">
           <form>
             <input
               className="footer-input"
@@ -29,9 +29,9 @@ function Footer() {
               placeholder="Your Password"
             />
 
-            <Button buttonStyle="btn--outline">login </Button>
-          </form>
-        </div>
+            </form>
+          </div> */}
+          <Button buttonStyle="btn--primary" buttonSize="btn--large">Subscribe </Button>
       </section>
       <div class="footer-links">
         <div className="footer-link-wrapper">
