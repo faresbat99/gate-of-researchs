@@ -11,6 +11,8 @@ function Products() {
     result = await result.json();
     setData(result);
   }, []);
+ 
+  
   console.warn("result", data);
   return (
     <React.Fragment>
@@ -36,7 +38,7 @@ function Products() {
                   src={"http://localhost:8000/" + item.file_path}
                   text={item.name}
                   label={item.section}
-                  path="/products"
+                  path={"http://localhost:8000/"+item.pdf_file}
                 />
               ))}
               <CardItem

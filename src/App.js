@@ -12,6 +12,7 @@ import Login from "./components/pages/login";
 import forgot from './components/pages/forgot';
 import Reset from "./components/pages/Reset";
 import AddResearch from "./components/pages/addResearch";
+import dashboard from "./components/pages/dashboard";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -50,6 +51,7 @@ function App() {
           <Route path="/about" component={about} />
           <Route path="/register" component={register} />
           <Route path="/addResearch" component={AddResearch} />
+          <Route path="/dashboard" component={dashboard} />
         </Switch>
       </Router>
     </>
