@@ -3,6 +3,9 @@ import "../../App.css";
 import CardItem from "./../CardItem";
 import "../Cards.css";
 import Footer from "./../Footer";
+import { Col, Container, Form, FormControl, Row } from "react-bootstrap";
+import { Button } from "./../Button";
+import "./../HeroSection.css";
 
 function Products() {
   const [data, setData] = useState([]);
@@ -11,13 +14,55 @@ function Products() {
     result = await result.json();
     setData(result);
   }, []);
- 
-  
+  async function search(key) {
+    //  console.warn(key) in console
+    let result = await fetch("http://localhost:8000/api/search/" + key);
+    result = await result.json();
+    //  console.warn(result) show all related to it
+    setData(result);
+  }
   console.warn("result", data);
   return (
     <React.Fragment>
       <div className="cards">
-        <h1>Check out these magnificient researchs</h1>
+        <div className="hero-btns">
+          <h1
+            style={{
+              fontFamily: "monospace",
+              fontWeight: "bold",
+              padding: "10px",
+              margin: "10px",
+            }}
+          >
+            Search for whatever you want{" "}
+          </h1>
+          <Container>
+            <Row>
+              <Col></Col>
+              <Col xs={7}>
+                <div className="productClass">
+                  <Form className="d-md-flex">
+                    <FormControl
+                      type="Search"
+                      placeholder="Search"
+                      className="me-3"
+                      onChange={(e) => search(e.target.value)}
+                    />
+                    <Button
+                      className="btns"
+                      buttonStyle="btn--primary"
+                      buttonSize="btn--large"
+                    >
+                      Search
+                    </Button>
+                  </Form>
+                </div>
+              </Col>
+              <Col></Col>
+            </Row>
+          </Container>
+        </div>
+
         <div className="cards__container">
           <div className="cards__wrapper">
             {/* <ul className="cards__items">
@@ -32,42 +77,18 @@ function Products() {
                 </ul>
               ))}
             </ul> */}
+            <div className="product_position">
             <ul className="cards__items">
               {data.map((item) => (
                 <CardItem
                   src={"http://localhost:8000/" + item.file_path}
                   text={item.name}
                   label={item.section}
-                  path={"http://localhost:8000/"+item.pdf_file}
+                  path={"http://localhost:8000/" + item.pdf_file}
                 />
               ))}
-              <CardItem
-              src="images/react.png"
-              text="How to make Fullstack by using react"
-              label="Web"
-              path="/services"
-            />  
             </ul>
-            <ul className="cards__items">
-            <CardItem
-              src="images/numerical-analysis.jpeg"
-              text="Numerical Analysis"
-              label="Mathimatics"
-              path="/services"
-            />
-            <CardItem
-              src="images/magic square.png"
-              text="Magic Square"
-              label="Mathimatics"
-              path="/products"
-            />
-            <CardItem
-              src="images/ai.jpeg"
-              text="introduction on Artificial Intelligent and How to use it "
-              label="Computer Science"
-              path="/sign-up"
-            />
-          </ul>
+            </div>
           </div>
         </div>
       </div>

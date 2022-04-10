@@ -294,11 +294,30 @@ body {
 .button-btn{
 text-align: center;
 padding: 20px;
+margin-top: 10px;
 
 }
-
+.button-btn>button{
+  background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+    padding: 8px 20px;
+    font-size: 18px;
+}
+.button-btn>button:hover{
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
+  size: 25px;
+  padding: 12px 26px;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+  
+}
 /* style for addrearch page */
-.viewer{
+/* .viewer{
   width: 100%;
   height: 800px;
   background-color: #ffffff1c;
@@ -306,11 +325,70 @@ padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .error-msg{
   width: 100%;
   color: red;
   font-size: 14px;
   font-weight: 600;
+}
+.delete{
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete:hover{
+  background-color: darkred;
+  transition: all 0.2s ease-out;
+}
+/* download buttons */
+.download {
+  background-color: DodgerBlue;
+  color: #fff;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  cursor: pointer;
+ font-size: small;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.download:hover {
+  background-color: rgb(10, 10, 10);
+  transition: all 0.5s ease-out;
+}
+.update {
+  background-color: green;
+  color: #fff;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Darker background on mouse-over */
+.update:hover {
+  background-color: rgb(2, 84, 2);
+  transition: all 0.5s ease-out;
+}
+.addResearch>h5{
+  color: "white";
+  font-weight: "bolder";
+  font-family: "monospace";
+  padding:"2px";
+  background-color:"black";
+  border-radius:"10px";
+}
+.productClass{
+  background-image: linear-gradient( #000000,#434343);
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
 }

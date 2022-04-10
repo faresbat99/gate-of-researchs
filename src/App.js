@@ -13,12 +13,14 @@ import forgot from './components/pages/forgot';
 import Reset from "./components/pages/Reset";
 import AddResearch from "./components/pages/addResearch";
 import dashboard from "./components/pages/dashboard";
+import updateResearch from "./components/pages/updateResearch";
+import Search from "./components/Search";
 
 function App() {
   const [user, setUser] = useState(null);
   const [belogin, setBelogin] = useState(false);
   ////
-
+//useEfect use to get data without refresh the page 
   useEffect(() => {
     //this will be called only once .
     (async () => {
@@ -51,6 +53,8 @@ function App() {
           <Route path="/about" component={about} />
           <Route path="/register" component={register} />
           <Route path="/addResearch" component={AddResearch} />
+          <Route path="/Update/:id" component={updateResearch}  /> {/**get the num with specific parameter */}
+          <Route path="/search" component={Search}  /> {/**get the num with specific parameter */}
           <Route path="/dashboard" component={dashboard} />
         </Switch>
       </Router>
