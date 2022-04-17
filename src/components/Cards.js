@@ -13,13 +13,13 @@ function Cards() {
               src="images/quantum-cpu.jpeg"
               text="Quantam Computing"
               label="physics && Computer Science"
-              path="/services"
+              path="/products"
             />
             <CardItem
               src="images/react.png"
               text="How to make Fullstack by using react"
               label="Web"
-              path="/services"
+              path="/products"
             />
           </ul>
           <ul className="cards__items">
@@ -27,7 +27,7 @@ function Cards() {
               src="images/numerical-analysis.jpeg"
               text="Numerical Analysis"
               label="Mathimatics"
-              path="/services"
+              path="/products"
             />
             <CardItem
               src="images/magic square.png"
@@ -39,7 +39,7 @@ function Cards() {
               src="images/ai.jpeg"
               text="introduction on Artificial Intelligent and How to use it "
               label="Computer Science"
-              path="/sign-up"
+              path="/products"
             />
           </ul>
         </div>

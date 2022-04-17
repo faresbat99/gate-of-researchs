@@ -34,7 +34,8 @@ function Products() {
               margin: "10px",
             }}
           >
-            Search for whatever you want{" "}
+            
+            Our Researches{" "}
           </h1>
           <Container>
             <Row>

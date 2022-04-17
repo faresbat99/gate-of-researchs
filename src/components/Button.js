@@ -1,14 +1,3 @@
-// import React from 'react';
-// import './Button.css';
-// import { Link } from 'react-router-dom';
-
-// export function Button() {
-//   return (
-//     <Link to='sign-up'>
-//       <button className='btn'>Sign Up</button>
-//     </Link>
-//   );
-// }
 
 import React from "react";
 import "./Button.css";
@@ -25,7 +14,7 @@ export const Button = ({
   buttonStyle,
   buttonSize,
 }) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
+  const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]; //if i didn't give button style it will take first style by default
 
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 

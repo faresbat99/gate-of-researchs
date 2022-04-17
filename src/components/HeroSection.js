@@ -3,6 +3,7 @@ import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
 import { Form, FormControl, Container, Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <div className="hero-container">
@@ -15,7 +16,8 @@ function HeroSection() {
         <Col></Col>
     
           <Col xs={6}>
-            
+           
+              <Link to="./Products">
             <Form className="d-md-flex">
               <FormControl
                 type="search"
@@ -32,6 +34,7 @@ function HeroSection() {
                 Search
               </Button>
             </Form>
+            </Link> 
           </Col>
           <Col></Col>
         </Row>
