@@ -2,7 +2,7 @@
   "name": "gate_of_research",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://faresbat99.github.io",
+  "homepage": "https://faresbat99.github.io/gate-of-researchs",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
     "@react-pdf-viewer/core": "^3.1.2",
@@ -19,6 +19,7 @@
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.0",
+    "save-dev": "^0.0.1-security",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
